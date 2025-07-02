@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TD - Mes documents de physique</title>
+
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Icônes Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    main {
+      max-width: 600px;
+      margin: 2rem auto 3rem;
+      padding: 2rem;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    main h2 {
+      color: #004080;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    details summary {
+      cursor: pointer;
+      font-weight: 600;
+      margin: 0.5rem 0;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .image-container {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .image-container img {
+      max-width: 150px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mes documents de physique</h1>
+    <nav>
+      <ul class="menu">
+        <li class="menu-item"><a href="index.html">Accueil</a></li>
+        <li class="menu-item"><a href="cours.html">Cours</a></li>
+        <li class="menu-item"><a href="td.html">TD</a></li>
+        <li class="menu-item"><a href="dm.html">DM</a></li>
+        <li class="menu-item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2><i class="fa-solid fa-pencil"></i> Mes TD</h2>
+    <ul>
+      <li>
+        <details>
+          <summary>📁 TD chimie</summary>
+          <ul>
+            <li><a href="docs/td/chimie1.pdf" download>Chimie 1</a></li>
+            <li><a href="docs/td/chimie2.pdf" download>Chimie 2</a></li>
+            <li><a href="docs/td/chimie3.pdf" download>Chimie 3</a></li>
+            <li><a href="docs/td/chimie4.pdf" download>Chimie 4</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>📁 TD de mécanique</summary>
+          <ul>
+            <li><a href="docs/td/meca1.pdf" download>Méca 1</a></li>
+            <li><a href="docs/td/meca2.pdf" download>Méca 2</a></li>
+            <li><a href="docs/td/meca3.pdf" download>Méca 3</a></li>
+          </ul>
+        </details>
+      </li>
+      <!-- Ajoute d'autres fichiers ici -->
+    </ul>
+  </main>
+
+  <div class="image-container">
+    <img src="images/idir_j.PNG" alt="Photo d'Idir" class="photo-idr" />
+  </div>
+
+  <footer>
+    <p>&copy; Designed by : Idir DRICHE</p>
+  </footer>
+</body>
+</html>

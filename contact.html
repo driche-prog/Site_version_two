@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact – ELEC'RMA</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font : Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icônes Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Police globale -->
+    <style>
+      body {
+        font-family: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 text-gray-800 leading-relaxed">
+    <!-- Barre de navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+      <div
+        class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center"
+      >
+        <h1 class="text-2xl md:text-3xl font-extrabold text-blue-900">
+          ELEC'RMA
+        </h1>
+
+        <nav>
+          <ul class="flex gap-4 text-sm md:text-base font-semibold">
+            <li><a href="index.html" class="hover:underline">Accueil</a></li>
+            <li><a href="services.html" class="hover:underline">Services</a></li>
+            <li>
+              <a href="disponibilites.html" class="hover:underline"
+                >Disponibilités</a
+              >
+            </li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+            <li><a href="a-propos.html" class="hover:underline">À&nbsp;propos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Section Contact -->
+    <main class="max-w-5xl mx-auto my-16 px-6">
+      <div class="bg-white rounded-2xl shadow-lg p-8 grid md:grid-cols-2 gap-8">
+        <!-- Formulaire mail -->
+        <section>
+          <h2 class="text-xl md:text-2xl font-bold text-blue-800 flex items-center gap-2 mb-6">
+            <i class="fas fa-envelope text-blue-600 text-2xl"></i>
+            Contact par mail
+          </h2>
+
+          <form
+            action="https://formspree.io/f/mrbkllzn"
+            method="POST"
+            class="space-y-4"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nouveau message depuis le site"
+            />
+
+            <div>
+              <label for="name" class="block font-medium mb-1">Nom :</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="block font-medium mb-1"
+                >Votre e‑mail :</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="_replyto"
+                required
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
+              />
+            </div>
+
+            <div>
+              <label for="objet" class="block font-medium mb-1">Objet :</label>
+              <input
+                type="text"
+                id="objet"
+                name="objet"
+                required
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
+              />
+            </div>
+
+            <div>
+              <label for="message" class="block font-medium mb-1"
+                >Message :</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg hover:bg-blue-900 transition"
+            >
+              Envoyer
+            </button>
+          </form>
+        </section>
+
+        <!-- Coordonnées -->
+        <section>
+          <h2 class="text-xl md:text-2xl font-bold text-blue-800 flex items-center gap-2 mb-6">
+            <i class="fas fa-phone text-blue-600 text-2xl"></i>
+            Contact par téléphone
+          </h2>
+
+          <div class="text-gray-700 space-y-4 text-base leading-relaxed">
+            <p>
+              <i class="fas fa-phone text-blue-600 mr-2"></i>
+              +33 6 85 34 04 49
+            </p>
+            <p>
+              <i class="fas fa-clock text-blue-600 mr-2"></i>
+              Disponible de 9h à 18h
+            </p>
+            <p>
+              <i class="fas fa-comment text-blue-600 mr-2"></i>
+              N'hésitez pas à laisser un message vocal ou un SMS en cas
+              d'absence.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="bg-white text-center py-6 text-sm text-gray-500">
+      &copy;&nbsp;2025 ELEC'RMA – Designed&nbsp;by&nbsp;Idir DRICHE
+    </footer>
+  </body>
+</html>

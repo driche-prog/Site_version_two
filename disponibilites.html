@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Disponibilités – ELEC'RMA</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font : Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icônes Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Police globale -->
+    <style>
+      body {
+        font-family: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 text-gray-800 leading-relaxed">
+    <!-- Barre de navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+      <div
+        class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center"
+      >
+        <h1 class="text-2xl md:text-3xl font-extrabold text-blue-900">
+          ELEC'RMA
+        </h1>
+
+        <nav>
+          <ul class="flex gap-4 text-sm md:text-base font-semibold">
+            <li><a href="index.html" class="hover:underline">Accueil</a></li>
+            <li><a href="services.html" class="hover:underline">Services</a></li>
+            <li>
+              <a href="disponibilites.html" class="hover:underline"
+                >Disponibilités</a
+              >
+            </li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+            <li><a href="a-propos.html" class="hover:underline">À&nbsp;propos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Section Disponibilités -->
+    <main class="max-w-5xl mx-auto my-16 px-6">
+      <section class="text-center space-y-8">
+        <!-- Carte Disponibilités -->
+        <div
+          class="max-w-md mx-auto bg-blue-50 border-2 border-blue-800 rounded-2xl p-8 shadow"
+        >
+          <h2
+            class="text-2xl md:text-3xl font-bold text-blue-800 flex items-center justify-center gap-3 mb-6"
+          >
+            <i class="fa-solid fa-calendar-days text-blue-800 text-3xl"></i>
+            Nos disponibilités
+          </h2>
+
+          <ul class="space-y-4 text-lg leading-relaxed text-left">
+            <li>
+              <span class="font-semibold">Lundi</span>
+              <span class="float-right">7h30 – 19h</span>
+            </li>
+            <li>
+              <span class="font-semibold">Mardi au vendredi</span>
+              <span class="float-right">7h – 19h</span>
+            </li>
+            <li>
+              <span class="font-semibold">Samedi</span>
+              <span class="float-right">24h/24</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="bg-white text-center py-6 text-sm text-gray-500">
+      &copy;&nbsp;2025 ELEC'RMA – Tous droits réservés
+    </footer>
+  </body>
+</html>

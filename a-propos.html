@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>À propos – ELEC'RMA</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font : Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icônes Font Awesome (au cas où) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Leaflet CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Police globale + hauteur carte -->
+    <style>
+      body {
+        font-family: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+      }
+      #map {
+        height: 400px; /* sécurité si Tailwind ne charge pas */
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 text-gray-800 leading-relaxed">
+    <!-- Barre de navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+      <div
+        class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center"
+      >
+        <h1 class="text-2xl md:text-3xl font-extrabold text-blue-900">
+          ELEC'RMA
+        </h1>
+
+        <nav>
+          <ul class="flex gap-4 text-sm md:text-base font-semibold">
+            <li><a href="index.html" class="hover:underline">Accueil</a></li>
+            <li><a href="services.html" class="hover:underline">Services</a></li>
+            <li>
+              <a href="disponibilites.html" class="hover:underline"
+                >Disponibilités</a
+              >
+            </li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+            <li><a href="a-propos.html" class="hover:underline">À&nbsp;propos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Section À propos -->
+    <main class="max-w-6xl mx-auto my-16 px-6">
+      <section class="grid gap-10 md:grid-cols-2">
+        <!-- Carte Leaflet -->
+        <div
+          id="map"
+          class="w-full rounded-2xl shadow-lg border-2 border-blue-800"
+        ></div>
+
+        <!-- Texte -->
+        <article class="space-y-8">
+          <h2 class="text-2xl md:text-3xl font-bold text-blue-800">
+            Qui sommes‑nous&nbsp;?
+          </h2>
+          <p>
+            <strong>ELEC'RMA</strong>, fondée par Rabah DEBA en 2024, repose sur
+            plus de 20 ans d’expérience dans l’installation, la mise aux normes
+            et le dépannage électrique. Structure à taille humaine, nous sommes
+            réactifs et proches de nos clients.
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-blue-800">
+            Notre mission
+          </h2>
+          <p>
+            Vous offrir des services électriques fiables, sécurisés et durables,
+            pour installation neuve, rénovation ou intervention d’urgence. Chaque
+            projet est traité avec rigueur et professionnalisme.
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-blue-800">
+            Pourquoi nous choisir&nbsp;?
+          </h2>
+          <p>
+            Un électricien passionné, attentif à vos besoins, misant sur la
+            qualité, la transparence et la confiance. Nous intervenons auprès des
+            particuliers et des professionnels pour vous simplifier la vie,
+            en toute sécurité.
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-blue-800">
+            Pour qui&nbsp;?
+          </h2>
+          <p>
+            Propriétaires, locataires, artisans ou entrepreneurs : si vous
+            recherchez un travail soigné, conforme aux normes et dans les délais,
+            <strong>ELEC'RMA</strong> est là pour vous.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="bg-white text-center py-6 text-sm text-gray-500">
+      &copy;&nbsp;2025 ELEC'RMA – Tous droits réservés
+    </footer>
+
+    <!-- Initialisation Leaflet -->
+    <script>
+      const map = L.map("map").setView([50.6292, 3.0573], 9);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 18,
+        attribution: "&copy; OpenStreetMap",
+      }).addTo(map);
+    </script>
+  </body>
+</html>

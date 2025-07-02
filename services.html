@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Services – ELEC'RMA</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font : Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icônes Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Police globale -->
+    <style>
+      body {
+        font-family: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 text-gray-800 leading-relaxed">
+    <!-- Barre de navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+      <div
+        class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center"
+      >
+        <h1 class="text-2xl md:text-3xl font-extrabold text-blue-900">
+          ELEC'RMA
+        </h1>
+
+        <nav>
+          <ul class="flex gap-4 text-sm md:text-base font-semibold">
+            <li><a href="index.html" class="hover:underline">Accueil</a></li>
+            <li><a href="services.html" class="hover:underline">Services</a></li>
+            <li>
+              <a href="disponibilites.html" class="hover:underline"
+                >Disponibilités</a
+              >
+            </li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+            <li><a href="a-propos.html" class="hover:underline">À&nbsp;propos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Section Services -->
+    <main class="max-w-5xl mx-auto my-16 px-6">
+      <section class="text-center space-y-8">
+        <!-- Titre -->
+        <div
+          class="max-w-xl mx-auto bg-blue-50 border-2 border-blue-800 rounded-2xl p-8 shadow flex items-center justify-center gap-3"
+        >
+          <i class="fa-solid fa-bolt text-blue-800 text-3xl"></i>
+          <h2 class="text-3xl font-bold text-blue-800">Nos services</h2>
+        </div>
+
+        <!-- Description -->
+        <p class="text-lg max-w-3xl mx-auto">
+          Nous mettons notre expertise à votre service pour tous vos besoins en
+          électricité&nbsp;: rapidité, fiabilité et sécurité. Découvrez ci‑dessous nos
+          principales prestations, réalisées avec sérieux et professionnalisme.
+        </p>
+
+        <!-- Grille de services -->
+        <ul
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 list-none px-0"
+        >
+          <!-- Carte -->
+          <li
+            class="bg-white rounded-xl p-6 shadow hover:-translate-y-1 hover:shadow-lg transition flex flex-col items-center text-center"
+          >
+            <i class="fa-solid fa-star text-blue-800 text-4xl mb-4"></i>
+            <span class="font-semibold text-lg">Installation neuve</span>
+          </li>
+
+          <li
+            class="bg-white rounded-xl p-6 shadow hover:-translate-y-1 hover:shadow-lg transition flex flex-col items-center text-center"
+          >
+            <i class="fa-solid fa-check-circle text-blue-800 text-4xl mb-4"></i>
+            <span class="font-semibold text-lg">Mise aux normes</span>
+          </li>
+
+          <li
+            class="bg-white rounded-xl p-6 shadow hover:-translate-y-1 hover:shadow-lg transition flex flex-col items-center text-center"
+          >
+            <i
+              class="fa-solid fa-screwdriver-wrench text-blue-800 text-4xl mb-4"
+            ></i>
+            <span class="font-semibold text-lg">Dépannage d’urgence</span>
+          </li>
+
+          <li
+            class="bg-white rounded-xl p-6 shadow hover:-translate-y-1 hover:shadow-lg transition flex flex-col items-center text-center"
+          >
+            <i class="fa-solid fa-network-wired text-blue-800 text-4xl mb-4"></i>
+            <span class="font-semibold text-lg">Tableaux électriques</span>
+          </li>
+
+          <li
+            class="bg-white rounded-xl p-6 shadow hover:-translate-y-1 hover:shadow-lg transition flex flex-col items-center text-center"
+          >
+            <i
+              class="fa-solid fa-plug-circle-bolt text-blue-800 text-4xl mb-4"
+            ></i>
+            <span class="font-semibold text-lg">Installation de prises</span>
+          </li>
+
+          <li
+            class="bg-white rounded-xl p-6 shadow hover:-translate-y-1 hover:shadow-lg transition flex flex-col items-center text-center"
+          >
+            <i class="fa-solid fa-lightbulb text-blue-800 text-4xl mb-4"></i>
+            <span class="font-semibold text-lg">Installation de luminaires</span>
+          </li>
+
+          <li
+            class="bg-white rounded-xl p-6 shadow hover:-translate-y-1 hover:shadow-lg transition flex flex-col items-center text-center"
+          >
+            <i class="fa-solid fa-fan text-blue-800 text-4xl mb-4"></i>
+            <span class="font-semibold text-lg">Installation de VMC</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="bg-white text-center py-6 text-sm text-gray-500">
+      &copy;&nbsp;2025 ELEC'RMA – Tous droits réservés<br />
+      Contact&nbsp;:
+      <a href="tel:+33685340449">+33&nbsp;6&nbsp;85&nbsp;34&nbsp;04&nbsp;49</a>
+      |
+      <a href="mailto:elecrma25@yahoo.com">elecrma25@yahoo.com</a>
+    </footer>
+  </body>
+</html>
